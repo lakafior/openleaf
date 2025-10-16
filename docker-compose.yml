@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  openleaf:
+    build: .
+    ports:
+      - "1133:1133"  # Change both numbers to 1122 for port 1122
+    environment:
+      - PORT=1133    # Change to 1122 if you want to use a different port
+    restart: always
